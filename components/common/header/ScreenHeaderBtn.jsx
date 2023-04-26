@@ -1,4 +1,4 @@
-import { Image, TouchableOpacity } from "react-native";
+import { TouchableOpacity ,Text} from "react-native";
 
 import styles from "./screenheader.style";
 import { useNavigation } from "expo-router";
@@ -10,7 +10,9 @@ const ScreenHeaderBtn = () => {
   }
   return (
     <TouchableOpacity style={styles.logoutbtn} onPress={handlePress}>
+      <Text>
       Logout
+      </Text>
     </TouchableOpacity>
   );
 };

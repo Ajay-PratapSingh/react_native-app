@@ -6,7 +6,7 @@ import { useFonts } from "expo-font";
 
 export const unstable_settings = {
   // Ensure any route can link back to `/`
-  initialRouteName: "home",
+  initialRouteName: "login",
 };
 
 const Layout = () => {

@@ -1,27 +1,22 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS,FONT, SIZES } from "../../../constants";
+import { COLORS, FONT, SIZES } from "../../../constants";
 
 const styles = StyleSheet.create({
-  logoutbtn:{
+  logoutbtn: {
     fontSize: SIZES.large,
     fontFamily: FONT.regular,
     color: COLORS.primary,
-    
-  },
-  btnContainer: {
-    width: 40,
-    height: 40,
-    backgroundColor: COLORS.white,
-    borderRadius: SIZES.small / 1.25,
-    justifyContent: "center",
+    width: 100,
+    borderRadius: 5,
+    height: 45,
     alignItems: "center",
+    justifyContent: "center",
+    marginTop: 30,
+    backgroundColor: "#FF1493",
+    marginLeft:10,
+    marginBottom:20,
   },
-  btnImg: (dimension) => ({
-    width: dimension,
-    height: dimension,
-    borderRadius: SIZES.small / 1.25,
-  }),
 });
 
 export default styles;

@@ -3,12 +3,11 @@ import { Stack,} from "expo-router";
 
 import { COLORS, SIZES } from "../constants";
 import {
-  Popularjobs,
+  Posts,
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
-import useFetch from "../hook/useFetch";
-import { useEffect, useState } from "react";
+
 
 
 const Home = () => {
@@ -33,7 +32,7 @@ const Home = () => {
           }}
         >
           <Welcome/>
-          <Popularjobs />
+          <Posts/>
 
         </View>
       </ScrollView>

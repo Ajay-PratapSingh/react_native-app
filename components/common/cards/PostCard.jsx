@@ -1,18 +1,15 @@
 import { View, Text, TouchableOpacity} from "react-native";
 
-import styles from "./popularjobcard.style";
+import styles from "./PostCard.style";
 
 
-const PopularJobCard = ({ item, selectedJob,userdata}) => {
-
-  const user = userdata.find(user => user.id === item.userId);
-  console.log(user.name);
+const PopularJobCard = ({ item, selectedJob}) => {
 
   return (
     <TouchableOpacity
       style={styles.container(selectedJob, item)}
     >
-      <Text style={styles.jobName(selectedJob, item)} numberOfLines={1}>{user.name}</Text>
+      <Text style={styles.jobName(selectedJob, item)} numberOfLines={1}>{item.userId}</Text>
       <View style={styles.infoContainer}>
         <Text style={styles.jobName(selectedJob, item)} numberOfLines={1}>
           {item.title}
