@@ -37,5 +37,48 @@ back to the login screen.</h4>
 <img style="margin: auto;" src="https://raw.githubusercontent.com/sachinverma53121/sachinverma53121/master/icons/github.png" alt=github width="60" height="60"/>
 </p>
 
+<h4>How to clone and run this project:</h4>
+
+[Node.js](http://nodejs.org/download/) is required to run this application on your local machine. 
+
+Install and run the app using the following steps: 
+
+Clone the repository
+```
+git clone https://github.com/Ajay-PratapSingh/react_native-app.git
+```
+
+Navigate to the repository
+```
+cd react_native-app
+```
+
+Install the dependencies
+```
+npm install
+```
+
+Run the application in development mode
+```
+npm start
+```
+press w to view app in web version in browser.
+
+Scan the QR code that appears on your terminal using your mobile device’s camera or scan it using Expo Go app.
+That’s it! You should now be able to run the app on your mobile device.
+
+App will be served on and can be viewed at [https://localhost:3000](https://localhost:3000)
+
+<h3>Important!</h3>
+<p>The android version of this app might not open on your device by scaning the QR (issue with expo).<br/>
+a workaround is to install Android studio Emulator on your PC (Demo video is recorded on emulator) <br/>
+and it is used in the development process.<br/>
+Once android studio emulator is setup press a to open android version.
+</p>
+
+
+
+
+
 
 
