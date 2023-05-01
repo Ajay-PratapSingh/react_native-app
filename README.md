@@ -23,7 +23,7 @@ back to the login screen.</h4>
 
 
 
-<h4>Skills and Tools Used: </h4>
+<h3>Skills and Tools Used: </h3>
 
 <p align="left">
 	
@@ -37,7 +37,7 @@ back to the login screen.</h4>
 <img style="margin: auto;" src="https://raw.githubusercontent.com/sachinverma53121/sachinverma53121/master/icons/github.png" alt=github width="60" height="60"/>
 </p>
 
-<h4>How to clone and run this project:</h4>
+<h3>How to clone and run this project:</h3>
 
 [Node.js](http://nodejs.org/download/) is required to run this application on your local machine. 
 
