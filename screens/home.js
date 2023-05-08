@@ -1,5 +1,5 @@
 import { SafeAreaView, ScrollView, View } from "react-native";
-import { Stack,} from "expo-router";
+
 
 import { COLORS, SIZES } from "../constants";
 import {

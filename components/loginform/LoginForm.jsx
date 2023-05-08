@@ -1,13 +1,15 @@
 import { StyleSheet } from 'react-native'
-import { View, TextInput, Alert,Text } from 'react-native';
+import { View, TextInput, Alert, Text } from 'react-native';
 import React, { useState } from 'react'
 import { useNavigation } from 'expo-router';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import {useSelector, useDispatch} from 'react-redux';
 
 export default function LoginForm() {
     const navigation = useNavigation();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const dispatch = useDispatch();
 
     const handleEmailChange = (email) => setEmail(email);
     const handlePasswordChange = (password) => setPassword(password);
@@ -18,7 +20,9 @@ export default function LoginForm() {
             .then(data => {
                 const user = data.find(user => user.email === `${email}`);
                 if (user && user.username === `${password}`) {
-                    console.log("Yes");
+                    inputuser={email:`${email}`,
+                    password:`${password}`}                  
+                    dispatch(login(inputuser));
                     navigation.navigate('home');
                 }
                 else {
@@ -29,6 +33,7 @@ export default function LoginForm() {
             });
         console.log(`Email: ${email}, Password: ${password}`);
     };
+
     return (
         <View style={styles.container}>
             <View style={styles.inputView}>

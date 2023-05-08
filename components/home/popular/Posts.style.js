@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     color: COLORS.gray,
   },
   cardsContainer: {
+    justifyContent: "center",
     marginTop: SIZES.medium,
   },
 });
